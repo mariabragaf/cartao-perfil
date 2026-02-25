@@ -10,6 +10,10 @@ export default function App() {
         source={(require("./assets/eu.jpg"))}
         style={styles.imagem}>
         </Image>
+
+         <Text style={styles.nome}>Maria Eduarda</Text>
+         <Text style={styles.profissao}>Developer</Text>
+
         <View style={styles.icons}>
           <Image source={(require("./assets/github.png"))}
           style={styles.icon}>
@@ -22,9 +26,6 @@ export default function App() {
 
           </Image>
         </View>
-
-         <Text>Maria Eduarda</Text>
-         <Text>Developer</Text>
         </View>      
       </View>
 
@@ -36,21 +37,20 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1f1e1e',
+    backgroundColor: '#b0e9ff',
     alignItems: 'center',
     justifyContent: 'center',
   },
   card: {
-    backgroundColor: '#f0f0f0',
-    width: 300,
-    height: 300,
-    padding: 30,
+    backgroundColor: '#ffffff',
+    width: 280,
+    padding: 25,
     alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 15,
+    borderRadius: 25,
     shadowColor: "#000",
-    shadowRadius: 5,
-    shadowOpacity: 0.3,
+    shadowRadius: 10,
+    shadowOpacity: 0.25,
+    elevation: 8,
 
   },
   row: {
@@ -59,20 +59,22 @@ const styles = StyleSheet.create({
   },
 
   imagem: {
-    width: 100,
-    height: 100,
-    borderRadius: 50,
-    marginBottom: 15,
+    width: 110,
+    height: 110,
+    borderRadius: 55,
+    marginBottom: 10,
   },
 
   nome: {
-    fontSize: 20,
+    fontSize: 22,
     fontWeight: 'bold',
+    marginTop: 10,
   },
 
   profissao: {
-    fontSize: 16,
-    color: "#555",
+    fontSize: 14,
+    color: "#666",
+    marginTop: 4,
   },
 
   icons: {
